@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+/* font imported */
+@font-face {
+  font-family: Centra;
+  src: url(.././src/assets/fonts/CentraNo2-Bold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Centra-book;
+  src: url(.././src/assets/fonts/CentraNo2-Book.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Centra-medium;
+  src: url(.././src/assets/fonts/CentraNo2-Medium.ttf);
+  font-weight: 600;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* default formatting starts */
+*{
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+body{
+  font-weight: 400;
+  overflow-x: hidden;
+  color: #fff !important;
+  background-color: #121212 !important;
+  font-family: Centra, sans-serif !important;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1,h2,h3,h4,h5,h6{
+  margin: 0%;
+  padding: 0%;
+  line-height: normal;
+}
+p,a,ul,li,button{
+  margin: 0%;
+  padding: 0%;
+  line-height: normal;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+button {
+  border: 0;
+  background-color: transparent;
+}
+input:focus,textarea:focus, select:focus{
+  outline: none;
+}
+
+@media screen and (min-width:1700px) {
+  main .container{
+    max-width: 100%;
+    padding: 0 150px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p.success{
+  color: green;
 }
-
-.App-link {
-  color: #61dafb;
+p.danger{
+  color: red;
 }
+/* default formatting ends */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
